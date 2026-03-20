@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Smiles Dental Clinic | Fort Kochi, Kerala</title>
+<meta name="description" content="Happy Smiles Dental Clinic — Centre for Total Dental Care. Located in Fort Kochi, Kerala. Call 098471 48462. Expert dental care by Dr. Neelima & Dr. Daniel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --white: #ffffff;
+  --off-white: #f7fafc;
+  --light: #eaf4fb;
+  --blue: #1a6fa8;
+  --blue-dark: #135a8c;
+  --blue-light: #e8f4fd;
+  --teal: #2a9d8f;
+  --teal-light: #e6f5f3;
+  --text: #1c2b3a;
+  --muted: #5f7a8e;
+  --border: #dce8f0;
+  --shadow: rgba(26,111,168,0.10);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: box-shadow .3s, padding .3s;
+}
+
+nav.scrolled {
+  box-shadow: 0 4px 24px var(--shadow);
+  padding: .7rem 5vw;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+
+.nav-icon {
+  width: 40px; height: 40px;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: -.02em;
+}
+
+.nav-brand-text strong {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  line-height: 1.2;
+}
+
+.nav-brand-text span {
+  font-size: .68rem;
+  color: var(--muted);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: .85rem;
+  font-weight: 500;
+  letter-spacing: .04em;
+}
+
+.nav-links a {
+  color: var(--muted);
+  transition: color .2s;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+  color: var(--blue);
+  border-bottom-color: var(--blue);
+}
+
+.nav-call {
+  background: var(--blue);
+  color: white;
+  font-weight: 600;
+  font-size: .82rem;
+  padding: .6rem 1.4rem;
+  border-radius: 50px;
+  letter-spacing: .04em;
+  transition: background .2s, transform .15s, box-shadow .2s;
+}
+
+.nav-call:hover {
+  background: var(--blue-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(26,111,168,.3);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px; height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all .3s;
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 9rem 5vw 5rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f0f8ff 0%, #e6f5f3 50%, #f0f8ff 100%);
+}
+
+.hero-circles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-circles span {
+  position: absolute;
+  border-radius: 50%;
+  opacity: .07;
+}
+
+.hero-circles span:nth-child(1) {
+  width: 600px; height: 600px;
+  background: var(--blue);
+  top: -200px; right: -100px;
+}
+
+.hero-circles span:nth-child(2) {
+  width: 400px; height: 400px;
+  background: var(--teal);
+  bottom: -150px; left: -100px;
+}
+
+.hero-circles span:nth-child(3) {
+  width: 200px; height: 200px;
+  background: var(--blue);
+  top: 40%; left: 40%;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-content { }
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  background: white;
+  border: 1px solid var(--border);
+  color: var(--blue);
+  font-size: .73rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: .4rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 12px var(--shadow);
+  animation: fadeUp .7s ease both;
+}
+
+.hero-badge::before {
+  content: '';
+  width: 7px; height: 7px;
+  background: var(--teal);
+  border-radius: 50%;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: .5rem;
+  animation: fadeUp .7s ease .1s both;
+}
+
+.hero h1 span { color: var(--blue); }
+
+.hero-malayalam {
+  font-size: .95rem;
+  color: var(--muted);
+  margin-bottom: .8rem;
+  animation: fadeUp .7s ease .15s both;
+  letter-spacing: .02em;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--teal);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  margin-bottom: 1.5rem;
+  animation: fadeUp .7s ease .2s both;
+}
+
+.hero-tagline {
+  font-size: 1.15rem;
+  color: var(--muted);
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  font-style: italic;
+  animation: fadeUp .7s ease .25s both;
+}
+
+.hero-tagline strong { color: var(--blue); font-style: normal; font-weight: 600; }
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  animation: fadeUp .7s ease .3s both;
+}
+
+.btn-blue {
+  background: var(--blue);
+  color: white;
+  font-weight: 600;
+  font-size: .92rem;
+  padding: .9rem 2rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background .2s, transform .15s, box-shadow .2s;
+  display: inline-flex; align-items: center; gap: .5rem;
+  letter-spacing: .03em;
+}
+
+.btn-blue:hover {
+  background: var(--blue-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(26,111,168,.35);
+}
+
+.btn-teal {
+  background: var(--teal);
+  color: white;
+  font-weight: 600;
+  font-size: .92rem;
+  padding: .9rem 2rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: background .2s, transform .15s, box-shadow .2s;
+  display: inline-flex; align-items: center; gap: .5rem;
+  letter-spacing: .03em;
+}
+
+.btn-teal:hover {
+  background: #228b7e;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(42,157,143,.35);
+}
+
+.hero-visual {
+  position: relative;
+  animation: fadeUp .8s ease .2s both;
+}
+
+.hero-card-wrap {
+  position: relative;
+}
+
+.hero-img-card {
+  background: white;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 24px 64px rgba(26,111,168,.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--blue), var(--teal));
+}
+
+.hero-placeholder {
+  width: 100%;
+  height: 320px;
+  background: linear-gradient(135deg, var(--blue-light) 0%, var(--teal-light) 100%);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.tooth-svg {
+  width: 80px;
+  opacity: .5;
+}
+
+.hero-placeholder p {
+  font-size: .85rem;
+  color: var(--muted);
+  text-align: center;
+  font-style: italic;
+}
+
+.hero-float-badge {
+  position: absolute;
+  background: white;
+  border-radius: 14px;
+  padding: .8rem 1.2rem;
+  box-shadow: 0 8px 28px rgba(26,111,168,.15);
+  font-size: .8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.hero-float-badge.top-left {
+  top: -16px; left: -16px;
+  color: var(--blue);
+  animation: float1 4s ease-in-out infinite;
+}
+
+.hero-float-badge.bottom-right {
+  bottom: -16px; right: -16px;
+  color: var(--teal);
+  animation: float2 4s ease-in-out infinite 1s;
+}
+
+.hero-float-badge .dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+/* ── SECTION BASE ── */
+section { padding: 6rem 5vw; }
+
+.section-wrap { max-width: 1200px; margin: 0 auto; }
+
+.section-label {
+  font-size: .72rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-weight: 600;
+  margin-bottom: .8rem;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+
+.section-label::before {
+  content: '';
+  display: block;
+  width: 28px; height: 2px;
+  background: var(--teal);
+  border-radius: 2px;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.section-title span { color: var(--blue); }
+
+.section-desc {
+  color: var(--muted);
+  font-size: .95rem;
+  max-width: 560px;
+  font-weight: 400;
+}
+
+.rule {
+  width: 50px; height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--teal));
+  border-radius: 2px;
+  margin: 1rem 0 1.5rem;
+}
+
+/* ── ABOUT ── */
+.about { background: var(--off-white); }
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-visual-wrap {
+  position: relative;
+}
+
+.about-main-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 16px 48px var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.about-main-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--blue-dark);
+  margin-bottom: 1rem;
+}
+
+.about-main-card p {
+  color: var(--muted);
+  font-size: .92rem;
+  line-height: 1.8;
+}
+
+.doctors-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.doctor-pill {
+  flex: 1;
+  background: var(--blue-light);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: .9rem 1rem;
+  text-align: center;
+}
+
+.doctor-pill strong {
+  display: block;
+  font-size: .88rem;
+  color: var(--blue-dark);
+  font-family: 'Playfair Display', serif;
+}
+
+.doctor-pill span {
+  font-size: .72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.about-stat {
+  background: linear-gradient(135deg, var(--blue-light), var(--teal-light));
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+
+.about-stat strong {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  color: var(--blue);
+  line-height: 1;
+}
+
+.about-stat span {
+  font-size: .75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.about-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.about-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: .92rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.feat-icon {
+  width: 34px; height: 34px;
+  background: var(--blue-light);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: .9rem;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+  margin-top: .1rem;
+}
+
+.about-features li strong { color: var(--text); }
+
+/* ── SERVICES ── */
+.services { background: white; }
+
+.services-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.services-header .section-label { justify-content: center; }
+.services-header .section-label::before { display: none; }
+.services-header .rule { margin: 1rem auto 0; }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.service-card {
+  background: var(--off-white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform .25s, box-shadow .25s, border-color .25s, background .25s;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), var(--teal));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 48px rgba(26,111,168,.13);
+  border-color: rgba(26,111,168,.25);
+  background: white;
+}
+
+.service-card:hover::after { transform: scaleX(1); }
+
+.service-icon-wrap {
+  width: 52px; height: 52px;
+  background: var(--blue-light);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.3rem;
+  border: 1px solid rgba(26,111,168,.15);
+  transition: background .25s;
+}
+
+.service-card:hover .service-icon-wrap {
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+}
+
+.service-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: .5rem;
+  transition: color .2s;
+}
+
+.service-card:hover h3 { color: var(--blue); }
+
+.service-card p {
+  font-size: .85rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ── WHY CHOOSE US ── */
+.why { background: linear-gradient(135deg, var(--blue-dark) 0%, #1a5f8a 50%, var(--teal) 100%); }
+
+.why .section-label { color: rgba(255,255,255,.7); }
+.why .section-label::before { background: rgba(255,255,255,.5); }
+.why .section-title { color: white; }
+.why .section-desc { color: rgba(255,255,255,.75); }
+
+.why-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.why-item {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 14px;
+  padding: 1.5rem;
+  backdrop-filter: blur(6px);
+  transition: background .2s, transform .2s;
+}
+
+.why-item:hover {
+  background: rgba(255,255,255,.18);
+  transform: translateY(-3px);
+}
+
+.why-item-icon {
+  font-size: 1.4rem;
+  margin-bottom: .8rem;
+}
+
+.why-item h4 {
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  margin-bottom: .3rem;
+}
+
+.why-item p {
+  font-size: .8rem;
+  color: rgba(255,255,255,.65);
+  line-height: 1.5;
+}
+
+.why-visual {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.why-big-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  color: white;
+  line-height: 1;
+  margin-bottom: .3rem;
+}
+
+.why-big-num span {
+  font-size: 2.5rem;
+  color: rgba(255,255,255,.6);
+}
+
+.why-visual p {
+  color: rgba(255,255,255,.8);
+  font-size: .9rem;
+  margin-bottom: 2rem;
+}
+
+.why-divider {
+  width: 40px; height: 2px;
+  background: rgba(255,255,255,.3);
+  margin: 1.5rem auto;
+}
+
+/* ── TESTIMONIALS ── */
+.testimonials { background: var(--off-white); }
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.testimonials-header .section-label { justify-content: center; }
+.testimonials-header .section-label::before { display: none; }
+.testimonials-header .rule { margin: 1rem auto 0; }
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 2.2rem;
+  position: relative;
+  transition: transform .2s, box-shadow .2s;
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(26,111,168,.14);
+}
+
+.quote-mark {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  line-height: .6;
+  color: var(--blue-light);
+  margin-bottom: .8rem;
+  display: block;
+}
+
+.testimonial-text {
+  font-size: .92rem;
+  color: var(--muted);
+  line-height: 1.75;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.stars {
+  color: #f4b942;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--border);
+}
+
+.author-avatar {
+  width: 42px; height: 42px;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: .95rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.author-name { font-size: .88rem; font-weight: 600; color: var(--text); }
+.author-sub { font-size: .75rem; color: var(--muted); }
+
+/* ── CONTACT ── */
+.contact { background: white; }
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.contact-info { }
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+}
+
+.ci-icon {
+  width: 46px; height: 46px;
+  background: var(--blue-light);
+  border: 1px solid rgba(26,111,168,.18);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.ci-text strong {
+  display: block;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: var(--blue);
+  margin-bottom: .3rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+}
+
+.ci-text span {
+  font-size: .9rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.ci-text small {
+  display: block;
+  font-size: .78rem;
+  color: #c0a060;
+  margin-top: .3rem;
+  font-style: italic;
+}
+
+.call-now-big {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.map-card {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 32px var(--shadow);
+}
+
+.map-card iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  display: block;
+}
+
+/* ── FOOTER ── */
+footer {
+  background: var(--text);
+  color: rgba(255,255,255,.85);
+  padding: 3.5rem 5vw 2rem;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-brand p {
+  font-size: .85rem;
+  color: rgba(255,255,255,.55);
+  margin-top: 1rem;
+  line-height: 1.7;
+  max-width: 280px;
+}
+
+.footer-col h4 {
+  font-size: .72rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 1.2rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .65rem;
+}
+
+.footer-col ul a {
+  font-size: .85rem;
+  color: rgba(255,255,255,.55);
+  transition: color .2s;
+}
+
+.footer-col ul a:hover { color: white; }
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,.08);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-bottom p {
+  font-size: .8rem;
+  color: rgba(255,255,255,.4);
+}
+
+.footer-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  margin-bottom: 1rem;
+}
+
+.footer-nav-icon {
+  width: 36px; height: 36px;
+  background: linear-gradient(135deg, var(--blue), var(--teal));
+  border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.footer-nav-brand strong {
+  font-family: 'Playfair Display', serif;
+  font-size: .95rem;
+  color: white;
+}
+
+/* ── WA FLOAT ── */
+.wa-float {
+  position: fixed;
+  bottom: 2rem; right: 2rem;
+  z-index: 200;
+  width: 56px; height: 56px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 6px 20px rgba(37,211,102,.4);
+  transition: transform .2s, box-shadow .2s;
+  animation: pulse-wa 2.5s ease-in-out infinite;
+  font-size: 1.5rem;
+}
+
+.wa-float:hover {
+  transform: scale(1.1);
+  animation: none;
+  box-shadow: 0 10px 30px rgba(37,211,102,.55);
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(8px); }
+}
+
+@keyframes pulse-wa {
+  0%, 100% { box-shadow: 0 6px 20px rgba(37,211,102,.4); }
+  50%       { box-shadow: 0 6px 32px rgba(37,211,102,.7); }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+
+.fade-in.visible { opacity: 1; transform: none; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .nav-links, .nav-call { display: none; }
+  .hamburger { display: flex; }
+
+  .hero-inner,
+  .about-inner,
+  .why-inner,
+  .contact-inner { grid-template-columns: 1fr; }
+
+  .hero { padding: 8rem 5vw 4rem; }
+  .hero-visual { display: none; }
+  .why-grid { grid-template-columns: 1fr 1fr; }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .why-grid { grid-template-columns: 1fr; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .hero h1 { font-size: 2.1rem; }
+  .doctors-row { flex-direction: column; }
+}
+
+/* mobile nav */
+.nav-open .nav-links {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 68px; left: 0; right: 0;
+  background: rgba(255,255,255,.98);
+  backdrop-filter: blur(12px);
+  padding: 2rem 5vw;
+  gap: 1.4rem;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 12px 40px var(--shadow);
+}
+
+.nav-open .nav-call {
+  display: block;
+  position: fixed;
+  top: calc(68px + 2rem + 5 * 2.4rem);
+  left: 5vw; right: 5vw;
+  text-align: center;
+}
+
+.open-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  background: #e6f9ee;
+  border: 1px solid #b7e8c8;
+  color: #1a7a3a;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: .35rem .85rem;
+  border-radius: 50px;
+  margin-top: .6rem;
+}
+
+.open-indicator::before {
+  content: '';
+  width: 6px; height: 6px;
+  background: #22c55e;
+  border-radius: 50%;
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .3; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-brand">
+    <div class="nav-icon">HS</div>
+    <div class="nav-brand-text">
+      <strong>Happy Smiles Dental Clinic</strong>
+      <span>Centre for Total Dental Care</span>
+    </div>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="tel:09847148462" class="nav-call">Call Now</a>
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-circles">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">Fort Kochi, Kerala</div>
+      <h1>Happy Smiles<br><span>Dental Clinic</span></h1>
+      <p class="hero-malayalam">ഹാപ്പി സ്മൈൽസ് ഡെൻ്റൽ ക്ലിനിക്</p>
+      <p class="hero-subtitle">Centre for Total Dental Care</p>
+      <p class="hero-tagline">"<strong>Your Smile,</strong> Our Priority"</p>
+      <div class="hero-actions">
+        <a href="tel:09847148462" class="btn-blue">Call Now &mdash; 098471 48462</a>
+        <a href="#services" class="btn-teal">View Services</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-wrap">
+        <div class="hero-float-badge top-left">
+          <span class="dot"></span> Open Daily till 8 PM
+        </div>
+        <div class="hero-img-card">
+          <div class="hero-placeholder">
+            <svg class="tooth-svg" viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40 5C25 5 12 16 12 30c0 8 3 14 6 20 2 4 3 8 3 14 0 6 2 16 6 20 3 3 7 2 9-2 1-3 2-8 4-8s3 5 4 8c2 4 6 5 9 2 4-4 6-14 6-20 0-6 1-10 3-14 3-6 6-12 6-20 0-14-13-25-28-25z" fill="#1a6fa8" opacity="0.3" stroke="#1a6fa8" stroke-width="2"/>
+              <path d="M30 28c0-3 2-6 5-6M50 28c0-3-2-6-5-6" stroke="#1a6fa8" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <p>Professional Dental Care<br>Fort Kochi, Kerala</p>
+          </div>
+        </div>
+        <div class="hero-float-badge bottom-right">
+          <span class="dot"></span> Expert Doctors
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-wrap">
+    <div class="about-inner">
+      <div class="about-visual-wrap fade-in">
+        <div class="about-main-card">
+          <h3>Meet Our Dental Team</h3>
+          <p>Our clinic is led by a dedicated team of experienced dental professionals committed to providing the highest standard of care to every patient who walks through our doors.</p>
+          <div class="doctors-row">
+            <div class="doctor-pill">
+              <strong>Dr. Neelima</strong>
+              <span>BDS, MDS</span>
+            </div>
+            <div class="doctor-pill">
+              <strong>Dr. Daniel</strong>
+              <span>BDS, MDS</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="about-stat">
+            <strong>24/7</strong>
+            <span>Patient Support</span>
+          </div>
+          <div class="about-stat">
+            <strong>8 PM</strong>
+            <span>Daily Closing</span>
+          </div>
+          <div class="about-stat">
+            <strong>100%</strong>
+            <span>Sterile Equipment</span>
+          </div>
+          <div class="about-stat">
+            <strong>6+</strong>
+            <span>Specialties</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text fade-in">
+        <div class="section-label">About Our Clinic</div>
+        <h2 class="section-title">Committed to Your <span>Oral Health</span></h2>
+        <div class="rule"></div>
+        <p class="section-desc">Happy Smiles Dental Clinic is a trusted dental care centre in the heart of Fort Kochi, Kerala. Under the expert guidance of Dr. Neelima and Dr. Daniel, we bring together clinical excellence and genuine compassion to deliver a dental experience unlike any other.</p>
+        <ul class="about-features">
+          <li>
+            <div class="feat-icon">+</div>
+            <div><strong>Experienced & Qualified Dentists</strong><br>Dr. Neelima and Dr. Daniel bring years of expertise across all areas of dentistry.</div>
+          </li>
+          <li>
+            <div class="feat-icon">*</div>
+            <div><strong>Modern Equipment & Technology</strong><br>We use the latest dental instruments for precise, efficient, and minimally invasive treatments.</div>
+          </li>
+          <li>
+            <div class="feat-icon">~</div>
+            <div><strong>Strict Hygiene Protocols</strong><br>Every tool and surface is sterilised to the highest standards, ensuring your complete safety.</div>
+          </li>
+          <li>
+            <div class="feat-icon">o</div>
+            <div><strong>Preventive Care Focused</strong><br>We believe in educating patients and preventing problems before they escalate.</div>
+          </li>
+        </ul>
+        <div class="open-indicator" style="margin-top:1.5rem;">Open Daily — Closes at 8 PM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-wrap">
+    <div class="services-header fade-in">
+      <div class="section-label">What We Provide</div>
+      <h2 class="section-title">Our <span>Services</span></h2>
+      <p class="section-desc" style="margin:0 auto;">Comprehensive dental treatments for the entire family — delivered with precision and care.</p>
+      <div class="rule"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon-wrap">&#9670;</div>
+        <h3>General Dentistry</h3>
+        <p>Routine check-ups, dental fillings, extractions, and preventive care to maintain healthy teeth and gums throughout your life.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon-wrap">&#9651;</div>
+        <h3>Teeth Cleaning & Whitening</h3>
+        <p>Professional scaling, polishing, and advanced whitening treatments to restore the brightness and cleanliness of your smile.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon-wrap">&#9632;</div>
+        <h3>Root Canal Treatment</h3>
+        <p>Painless, precision endodontic therapy to treat infected teeth and eliminate pain while preserving your natural tooth structure.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon-wrap">&#9671;</div>
+        <h3>Dental Implants</h3>
+        <p>Long-lasting, natural-looking implant solutions to permanently replace missing teeth and restore your smile with confidence.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon-wrap">&#9650;</div>
+        <h3>Braces & Aligners</h3>
+        <p>Traditional braces and modern clear aligner options to straighten teeth and correct bite issues for patients of all ages.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon-wrap">&#9633;</div>
+        <h3>Pediatric Dentistry</h3>
+        <p>Child-friendly dental care in a welcoming environment that makes young patients feel safe, comfortable, and at ease.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon-wrap">&#9679;</div>
+        <h3>Cosmetic Dentistry</h3>
+        <p>Smile makeovers including veneers, bonding, and contouring tailored to enhance your appearance and boost your confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why" id="why">
+  <div class="section-wrap">
+    <div class="why-inner">
+      <div class="fade-in">
+        <div class="section-label">Our Strengths</div>
+        <h2 class="section-title" style="color:white;">Why Choose <span style="color:rgba(255,255,255,.65)">Happy Smiles?</span></h2>
+        <div class="rule"></div>
+        <p class="section-desc">We are committed to delivering a dental experience that is safe, comfortable, and genuinely patient-centred at every step.</p>
+        <div class="why-grid" style="margin-top:2rem;">
+          <div class="why-item">
+            <div class="why-item-icon">&#9670;</div>
+            <h4>Experienced Doctors</h4>
+            <p>Dr. Neelima and Dr. Daniel bring deep clinical expertise across all dental specialties.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">&#9651;</div>
+            <h4>Friendly Staff</h4>
+            <p>Our warm and supportive team ensures every visit is a pleasant, stress-free experience.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">&#9632;</div>
+            <h4>Modern Equipment</h4>
+            <p>State-of-the-art dental technology for precise, efficient, and minimally invasive care.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">&#9671;</div>
+            <h4>Affordable Pricing</h4>
+            <p>High-quality dental care at transparent, reasonable rates accessible to all families.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">&#9650;</div>
+            <h4>Hygienic Clinic</h4>
+            <p>Rigorous sterilisation and infection control protocols to protect your health at all times.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item-icon">&#9633;</div>
+            <h4>Patient Comfort</h4>
+            <p>A calm, welcoming environment designed to ease anxiety and put every patient at ease.</p>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual fade-in" style="text-align:center;">
+        <div class="why-big-num">4.9<span>/5</span></div>
+        <p>Average patient satisfaction rating across all reviews</p>
+        <div style="font-size:1.3rem; letter-spacing:4px; color:white; margin-bottom:.5rem;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="why-divider"></div>
+        <p style="font-size:.85rem;">Trusted by families across Fort Kochi and Ernakulam</p>
+        <div style="margin-top:2rem;">
+          <a href="tel:09847148462" class="btn-blue" style="justify-content:center; width:100%;">Call Us Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="section-wrap">
+    <div class="testimonials-header fade-in">
+      <div class="section-label">Patient Testimonials</div>
+      <h2 class="section-title">What Our <span>Patients Say</span></h2>
+      <div class="rule"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <span class="quote-mark">"</span>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">Exceptional care and a truly gentle treatment experience. The doctor took time to explain every step clearly and made me feel completely at ease throughout the procedure.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">R</div>
+          <div>
+            <div class="author-name">Riya Mathew</div>
+            <div class="author-sub">Root Canal Treatment</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <span class="quote-mark">"</span>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">Highly professional staff and outstanding quality of work. Every member of the team was courteous and skilled. I would strongly recommend Happy Smiles to anyone in Fort Kochi.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">A</div>
+          <div>
+            <div class="author-name">Arjun Nair</div>
+            <div class="author-sub">Dental Implant</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <span class="quote-mark">"</span>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">An exceptionally clean and hygienic clinic with very reasonable charges and excellent service quality. Dr. Neelima was thorough, patient, and incredibly professional throughout.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">F</div>
+          <div>
+            <div class="author-name">Fathima Beevi</div>
+            <div class="author-sub">Teeth Whitening</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-wrap">
+    <div class="contact-inner">
+      <div class="fade-in">
+        <div class="section-label">Find Us</div>
+        <h2 class="section-title">Contact <span>Information</span></h2>
+        <div class="rule"></div>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="ci-icon">&#9642;</div>
+            <div class="ci-text">
+              <strong>Address</strong>
+              <span>Veli Rd, near Pallath Raman Ground,<br>Fort Kochi, Kochi, Kerala 682001</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">&#9643;</div>
+            <div class="ci-text">
+              <strong>Phone</strong>
+              <span><a href="tel:09847148462" style="color:var(--blue); font-weight:600;">098471 48462</a></span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">&#9644;</div>
+            <div class="ci-text">
+              <strong>Clinic Hours</strong>
+              <span>Open Daily &mdash; Closes at 8:00 PM</span>
+              <small>Timings may vary on holidays such as Eid</small>
+            </div>
+          </div>
+        </div>
+        <div class="call-now-big">
+          <a href="tel:09847148462" class="btn-blue">Call Now: 098471 48462</a>
+          <a href="https://wa.me/919847148462" target="_blank" class="btn-teal">WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="map-card fade-in">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.8!2d76.2420!3d9.9640!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0871c3a9b00001%3A0x0!2sVeli+Rd%2C+Fort+Kochi%2C+Kerala+682001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Happy Smiles Dental Clinic Location">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-nav-brand">
+        <div class="footer-nav-icon">HS</div>
+        <strong>Happy Smiles Dental Clinic</strong>
+      </div>
+      <p>Centre for Total Dental Care. Serving the families of Fort Kochi and Ernakulam with professional, compassionate dental treatment.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Choose Us</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:09847148462">098471 48462</a></li>
+        <li><a href="#">Veli Rd, Fort Kochi</a></li>
+        <li><a href="#">Kochi, Kerala 682001</a></li>
+        <li><a href="https://wa.me/919847148462" target="_blank">WhatsApp</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Happy Smiles Dental Clinic. All rights reserved.</p>
+    <p>Fort Kochi, Kochi, Kerala</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/919847148462" target="_blank" class="wa-float" title="Chat on WhatsApp">&#128172;</a>
+
+<script>
+  // Scroll observer
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+  // Nav scroll effect
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Mobile nav
+  function toggleNav() {
+    document.getElementById('navbar').classList.toggle('nav-open');
+  }
+
+  document.querySelectorAll('.nav-links a').forEach(a =>
+    a.addEventListener('click', () => document.getElementById('navbar').classList.remove('nav-open'))
+  );
+</script>
+</body>
+</html>
